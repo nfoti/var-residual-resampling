@@ -1,0 +1,6 @@
+name: var-rr
+dependencies:
+    - numpy
+    - matplotlib
+    - statsmodels
+    - ipython
