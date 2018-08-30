@@ -38,6 +38,7 @@ if __name__ == "__main__":
     nres_samps = 1000
 
     Y = var_sim(T, A, Sigma)
+    Y -= np.mean(Y, axis=0)
 
     model = VAR(Y)
     res = model.fit(1)
