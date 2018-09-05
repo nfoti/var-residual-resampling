@@ -56,7 +56,7 @@ if __name__ == "__main__":
     
     A_rr_dist = np.empty((nres_samps, d, d))
     for ni in range(nres_samps):
-        inds = np.random.choice(range(1,T), size=T-1, replace=True)
+        inds = np.random.choice(range(0,T-1), size=T-1, replace=True)
 
         resid_perm = resid[inds]
 
